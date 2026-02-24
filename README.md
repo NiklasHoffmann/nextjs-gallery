@@ -213,7 +213,7 @@ nextjs-gallery/
 1. **Repository klonen**
 
 ```bash
-git clone https://github.com/OWNER/nextjs-gallery.git
+git clone https://github.com/NiklasHoffmann/nextjs-gallery.git
 cd nextjs-gallery
 ```
 
@@ -487,7 +487,7 @@ MIT License
 
 Erstellt von **Niklas Hoffmann** als Production-Ready Starter Template für Next.js 16
 
-**Repository:** https://github.com/OWNER/nextjs-gallery
+**Repository:** https://github.com/NiklasHoffmann/nextjs-gallery
 
 ---
 
