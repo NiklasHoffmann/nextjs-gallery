@@ -1,0 +1,45 @@
+{
+  "common": {
+    "appName": "Next.js Starter",
+    "welcome": "Willkommen",
+    "home": {
+      "headline": "Willkommen",
+      "cards": {
+        "nextTitle": "Next.js 16",
+        "nextDescription": "Aktuelles Next.js mit App Router",
+        "tsTitle": "TypeScript",
+        "tsDescription": "Vollständig typisierte Codebasis",
+        "dbTitle": "MongoDB",
+        "dbDescription": "Datenbank-Integration bereit",
+        "i18nTitle": "i18n",
+        "i18nDescription": "Mehrsprachige Unterstützung"
+      }
+    },
+    "loading": "Wird geladen...",
+    "error": "Ein Fehler ist aufgetreten",
+    "notFound": "Seite nicht gefunden",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "navigation": {
+    "home": "Start",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "theme": {
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System",
+    "toggle": "Design wechseln"
+  },
+  "language": {
+    "toggle": "Sprache wechseln",
+    "de": "Deutsch",
+    "en": "Englisch"
+  },
+  "errors": {
+    "generic": "Etwas ist schief gelaufen!",
+    "tryAgain": "Erneut versuchen",
+    "pageNotFound": "Diese Seite existiert nicht",
+    "serverError": "Serverfehler"
+  }
+}

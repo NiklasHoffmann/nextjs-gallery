@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Design Tokens - Light Mode */
+    --color-background: 255 255 255;
+    --color-foreground: 17 24 39;
+    --color-primary: 14 165 233;
+    --color-primary-foreground: 255 255 255;
+    --color-secondary: 243 244 246;
+    --color-secondary-foreground: 17 24 39;
+    --color-muted: 243 244 246;
+    --color-muted-foreground: 107 114 128;
+    --color-accent: 243 244 246;
+    --color-accent-foreground: 17 24 39;
+    --color-border: 229 231 235;
+    --color-input: 229 231 235;
+    --color-ring: 14 165 233;
+    
+    /* Semantic Colors */
+    --color-success: 34 197 94;
+    --color-warning: 245 158 11;
+    --color-danger: 239 68 68;
+    --color-info: 59 130 246;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    
+    /* Border Radius */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+
+  html {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+    
+    /* Design Tokens - Dark Mode */
+    --color-background: 3 7 18;
+    --color-foreground: 249 250 251;
+    --color-primary: 14 165 233;
+    --color-primary-foreground: 255 255 255;
+    --color-secondary: 31 41 55;
+    --color-secondary-foreground: 249 250 251;
+    --color-muted: 31 41 55;
+    --color-muted-foreground: 156 163 175;
+    --color-accent: 31 41 55;
+    --color-accent-foreground: 249 250 251;
+    --color-border: 55 65 81;
+    --color-input: 55 65 81;
+    --color-ring: 14 165 233;
+  }
+
+  /* Disable transitions on page load */
+  html.loading * {
+    transition: none !important;
+  }
+
+  /* Theme transition: only active during toggle for synced timing */
+  html.theme-transition,
+  html.theme-transition body,
+  html.theme-transition *,
+  html.theme-transition *::before,
+  html.theme-transition *::after {
+    transition-property:
+      background-color,
+      border-color,
+      fill,
+      stroke,
+      box-shadow,
+      backdrop-filter,
+      -webkit-backdrop-filter;
+    transition-timing-function: ease-in-out;
+    transition-duration: 350ms;
+    transition-delay: 0ms;
+    will-change: background-color, border-color;
+  }
+
+  body {
+    @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Focus Styles für Accessibility */
+  *:focus-visible {
+    outline: 2px solid rgb(var(--color-ring));
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Custom Utility Classes */
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .dark .glass-effect {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
