@@ -19,7 +19,7 @@ Ein vollständiges, produktionsreifes Next.js Starter-Template mit TypeScript, T
 - **Validation** - Zod für Runtime-Validation & Env Variables
 - **ESLint + Prettier** - Code Quality & Auto-Formatting
 - **Husky** - Git Hooks für Pre-Commit & Pre-Push Checks
-- **Winston Logger** - Strukturiertes Logging mit Rotation
+- **Winston Logger** - Strukturiertes Logging in Console und Dateien
 
 ### Production Features
 
@@ -31,7 +31,7 @@ Ein vollständiges, produktionsreifes Next.js Starter-Template mit TypeScript, T
 - **TypeScript Strict Mode** - Maximale Type-Safety
 - **VS Code Integration** - Settings & Extensions empfohlen
 - **Docker Ready** - Dockerfile & docker-compose.yml
-- **CI/CD Pipeline** - GitHub Actions Integration
+- **CI Pipeline** - GitHub Actions Integration
 
 ### NEW: Advanced UI Components & Hooks
 
@@ -111,8 +111,8 @@ Ein vollständiges, produktionsreifes Next.js Starter-Template mit TypeScript, T
 ### DevOps
 
 - **Docker Support** - Multi-stage Build für Production
-- **GitHub Actions** - Automatische CI/CD Pipeline
-- **Logging** - Winston mit File Rotation
+- **GitHub Actions** - Automatische CI-Pipeline
+- **Logging** - Winston mit Console- und File-Output
 - **Environment Validation** - Zod-basierte Env Checks
 
 ## Projektstruktur
@@ -192,7 +192,7 @@ nextjs-gallery/
 │   ├── de.json
 │   └── en.json
 ├── .github/workflows/             # GitHub Actions
-│   └── ci.yml                     # CI/CD Pipeline
+│   └── ci.yml                     # CI Pipeline
 ├── .vscode/                       # VS Code Settings
 ├── .husky/                        # Git Hooks
 ├── Dockerfile                     # Docker Configuration
@@ -471,8 +471,8 @@ Für spezialisierte Use Cases könntest du ergänzen:
 
 - [Next.js Dokumentation](https://nextjs.org/docs)
 - [Tailwind CSS Dokumentation](https://tailwindcss.com/docs)
-- [MongoDB Dokumentation](https://docs.mongodb.com)
-- [next-intl Dokumentation](https://next-intl-docs.vercel.app)
+- [MongoDB Dokumentation](https://www.mongodb.com/docs)
+- [next-intl Dokumentation](https://next-intl.dev/docs)
 - [next-themes Dokumentation](https://github.com/pacocoursey/next-themes)
 
 ## Contributing
@@ -498,6 +498,6 @@ Erstellt von **Niklas Hoffmann** als Production-Ready Starter Template für Next
 - Perfect Dark Mode (No Flicker)
 - Production-Ready API
 - Docker Support
-- CI/CD Pipeline
+- CI Pipeline
 - Full i18n Support
 - SEO Optimized

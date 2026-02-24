@@ -339,7 +339,7 @@ function DashboardPage() {
 export default withAuth(DashboardPage);
 
 // Or with role requirement
-export default withAuth(DashboardPage, { requiredRole: 'admin' });
+// export default withAuth(DashboardPage, { requiredRole: 'admin' });
 ```
 
 ## Permissions
